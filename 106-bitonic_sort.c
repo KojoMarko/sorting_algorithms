@@ -1,14 +1,8 @@
-/*
- * File: 106-bitonic_sort.c
- * Auth: N.M.M
- *       M.W
- */
-
 #include "sort.h"
 
 void swap_ints(int *a, int *b);
 void bitonic_merge(int *array, size_t size, size_t start, size_t seq,
-		   char flow);
+		char flow);
 void bitonic_seq(int *array, size_t size, size_t start, size_t seq, char flow);
 void bitonic_sort(int *array, size_t size);
 
@@ -16,6 +10,8 @@ void bitonic_sort(int *array, size_t size);
  * swap_ints - Swap two integers in an array.
  * @a: The first integer to swap.
  * @b: The second integer to swap.
+ *
+ * Authors: Lawrence Adams & Francesca Lynn Asiedu Asare
  */
 void swap_ints(int *a, int *b)
 {
@@ -35,7 +31,7 @@ void swap_ints(int *a, int *b)
  * @flow: The direction to sort in.
  */
 void bitonic_merge(int *array, size_t size, size_t start, size_t seq,
-		   char flow)
+		char flow)
 {
 	size_t i, jump = seq / 2;
 
